@@ -458,7 +458,7 @@ int verificarUsuario(char *usuario, char *contrasena) {
     float saldoArchivo;
     FILE *archivo = fopen("usuarios.txt", "r");
     if (archivo == NULL) {
-        printf("Error al abrir el archivo de usuarios\n");
+        printf("No se ha encontrado el archivo de usuarios\n");
         return 0;
     }
 
