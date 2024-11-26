@@ -437,8 +437,7 @@ void registrarUsuario() {
 int usuarioDisponible(char usuarioVerificar[20]) {
     FILE *archivo = fopen("usuarios.txt", "r");
     if (archivo == NULL) {
-        printf("Aun no hay usuarios registrados, por favor registrese\n");
-	registrarUsuario();   
+        printf("Aun no hay usuarios registrados, por favor registrese\n");   
         return 0;
     }
 
